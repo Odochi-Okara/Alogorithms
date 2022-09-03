@@ -2,8 +2,8 @@ package com.algorithms;
 
 public class Binary {
     public static void main(String[] args) {
-        int val = 417;
-        String str = Integer.toBinaryString(val);
+        long val = 9;
+        String str = Long.toBinaryString(val);
         System.out.println(str);
 
         String newStr = "";
@@ -18,9 +18,9 @@ public class Binary {
             if(newStr.charAt(i)=='1')result+=(int)Math.pow(2, count);
             count++;
         }
-        System.out.println(newStr);
+//        System.out.println(newStr);
         int num = Integer.parseInt(newStr);
-        System.out.println(result);
+//        System.out.println(result);
 
 //        StringBuilder sb = new StringBuilder();
 //        sb.append(str);

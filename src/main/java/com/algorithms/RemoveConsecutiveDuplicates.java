@@ -1,6 +1,21 @@
 package com.algorithms;
 
 public class RemoveConsecutiveDuplicates {
+
+    private String lang;
+
+    public RemoveConsecutiveDuplicates(String lang) {
+        setLang(lang);
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
     public static void main(String[] args) {
         System.out.println(removeConsecutiveDuplicates("alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"));
     }

@@ -4,7 +4,10 @@ import java.util.Locale;
 
 public class GreetMe {
     public static void main(String[] args) {
-        System.out.println(greet("oDOCHI"));
+        for (String arg:args) {
+            System.out.print(arg);
+        }
+        System.out.printf(greet("oDOCHI"));
     }
     public static String greet(String name){
         String u = name.toUpperCase().substring(0,1);
